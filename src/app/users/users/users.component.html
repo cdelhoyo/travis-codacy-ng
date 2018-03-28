@@ -1,0 +1,9 @@
+<p>Username: <input type="text" #username id="username"></p>
+<button (click)="filter(username.value)" id="filter">Filter</button>
+
+<div class="user" *ngFor="let user of users$ | async; let i = index;" id="user-{{i}}">
+  <p id="id">{{user.id}}</p>
+  <p id="name">{{user.name}}</p>
+  <p id="username">{{user.username}}</p>
+  <p id="email">{{user.email}}</p>
+</div>
