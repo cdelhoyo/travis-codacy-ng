@@ -24,6 +24,5 @@ before_script:
 
 script:
 - npm run build
-- npm run e2e
 - npm run test -- --code-coverage --single-run
 - npm run test-with-coverage
